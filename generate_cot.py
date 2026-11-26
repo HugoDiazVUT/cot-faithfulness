@@ -44,3 +44,6 @@ def main():
             rows.append({**ex.to_dict(), "model": args.model, "generation": gen,
                          "cot_text": cot, "cot_steps": split_steps(cot)})
         write_jsonl(out_path, rows)      # guarda tras cada lote
+
+if __name__ == "__main__":
+    main()
